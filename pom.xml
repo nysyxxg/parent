@@ -355,6 +355,87 @@
     <excludedGroups />
   </properties>
 
+  <!--
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>${javadoc.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jxr-plugin</artifactId>
+      <version>${jxr.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-maven-plugin</artifactId>
+      <version>${spotbugs.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.10.6</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>tidy-maven-plugin</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>base-bundle-descriptor</artifactId>
+      <version>${base-bundle.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-source-plugin</artifactId>
+      <version>${source.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>versions-maven-plugin</artifactId>
+      <version>${versions.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>taglist-maven-plugin</artifactId>
+      <version>${taglist.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-report-plugin</artifactId>
+      <version>${surefire.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-pmd-plugin</artifactId>
+      <version>${pmd.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-changes-plugin</artifactId>
+      <version>${changes.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.revelc.code.formatter</groupId>
+      <artifactId>formatter-maven-plugin</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+  </dependencies>
+  -->
   <build>
     <pluginManagement>
       <plugins>
@@ -538,6 +619,7 @@
           <version>${surefire.version}</version>
           <configuration>
             <!-- In case of jmockit usage with jdk9 -->
+            <!--suppress UnresolvedMavenProperty -->
             <argLine>${argLine} -Djdk.attach.allowAttachSelf</argLine>
           </configuration>
         </plugin>
@@ -603,6 +685,9 @@
             <artifactId>build-tools</artifactId>
             <version>${build-tools.version}</version>
           </dependency>
+
+
+
         </dependencies>
       </plugin>
 
