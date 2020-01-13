@@ -434,8 +434,7 @@
       <artifactId>formatter-maven-plugin</artifactId>
       <version>2.9.0</version>
     </dependency>
-  </dependencies>
-  -->
+  </dependencies> -->
   <build>
     <pluginManagement>
       <plugins>
@@ -1144,7 +1143,7 @@
                       <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
                     </manifestEntries>
                   </archive>
-                  <additionalparam>-Xdoclint:-missing</additionalparam>
+                  <!--<additionalparam>-Xdoclint:-missing</additionalparam>-->
                 </configuration>
               </execution>
             </executions>
